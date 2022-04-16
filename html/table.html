@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    table {
+        border: 1px solid darkslategrey;
+        width: 80%;
+        height:90%;
+        text-align: center;
+    }
+    td, th {
+        border: 1px solid darkslategrey;
+        width: 20%;
+        height:30%;
+    }
+    .red {
+        background-color: red;
+    }
+    .blue {
+        background-color: blue;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td> </td>
+            <th class='red' scope="col">국어</th>
+            <th class='red' scope="col">영어</th>    
+            <th class='red' scope="col">수학</th>     
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th class='blue'scope="row">박승진</th>
+            <td>100</td>
+            <td>90</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th class='blue' scope="row">조나현</th>
+            <td>100</td>
+            <td>30</td>
+            <td>40</td>
+        </tr>
+    </table>
+
+</body>
+</html>
