@@ -1,2 +1,5 @@
-on = [spring, summer, fall, winter];
-// console.log(season[0]);
+    if(fruits[i] = 'melon'){
+        console.log("There is melon");
+    }else{
+        console.log("There isn't melon");
+    }
