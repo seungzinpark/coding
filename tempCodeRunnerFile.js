@@ -1,0 +1,1 @@
+        min = min < arr[i] ? min : arr[i];

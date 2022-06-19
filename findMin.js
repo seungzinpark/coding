@@ -1,3 +1,16 @@
+const findMin = arr => {
+    let min = arr[0];
+    for(let i = 1; i<arr.length; i++){
+        min = min < arr[i] ? min : arr[i];
+        // if(min>arr[i]){
+        //     min = arr[i]
+        // }
+    }
+    return min;
+}
+
+console.log(findMin([4,1,3,2,8,9]))
+
 function solution(arr) {
     if(arr.length === 1){
         return [-1]
