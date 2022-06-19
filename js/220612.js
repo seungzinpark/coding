@@ -1,18 +1,10 @@
-// 배열에 특화된 for (value of arr)
-const arr = [1,2,3,4,5,6]
-for (value of arr){
-    console.log(value);
+const aaa = ['melon', 'banana', 'lemon', 'tomato', 'grape'];
+function searchMelon(fruits){
+    for (value of fruits){
+        console.log(value);
+    }
+    const hasMelon = fruits.includes('melon') ? "멜론 있습니다" : "멜론 없습니다"
+    console.log(hasMelon);
+    return fruits.join('-');
 }
-
-// 객체에 특화된 for (key in obj)
-const arr = [1,2,3,4,5,6]
-for (key in arr){
-    console.log(key);
-}
-const person = {
-    name: "SJ",
-    age: 26
-}
-for (key in person){
-    console.log(key);
-}
+console.log(searchMelon(aaa))
