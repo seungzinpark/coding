@@ -1,1 +1,4 @@
-        min = min < arr[i] ? min : arr[i];
+
+    // if(result != ){
+    //     console.log(result);
+    // }
