@@ -1,9 +1,16 @@
-const array = [1,3,5,7,9,8,6,4,2]
+// numbers = [1, 4, 5, 9, 3, 7, 8, 2, 6 ,10];
+// numbers.sort((x,y)=>x-y);
+// console.log(numbers);
+// numbers.reverse();
+// console.log(numbers);
 
-array.forEach((value, index, origin) => {
-    console.log(value);
-    console.log(index);
-    console.log(origin);
-})
 
-console.log(array);
+const numbers = [1, 2, 3, 4, 5]
+function solution(numbers){
+    const twice = numbers.map((value,index,arr)=> {
+        return value*2        
+        })
+    return twice;
+}
+console.log(solution([1, 2, 3, 4, 5]))
+
