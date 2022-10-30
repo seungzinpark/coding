@@ -1,16 +1,15 @@
-// numbers = [1, 4, 5, 9, 3, 7, 8, 2, 6 ,10];
-// numbers.sort((x,y)=>x-y);
-// console.log(numbers);
-// numbers.reverse();
-// console.log(numbers);
+// 정수 n과 정수 배열 numlist가 매개변수로 주어질 때,
+// numlist에서 n의 배수가 아닌 수들을 제거한 배열을 return하도록 solution 함수를 완성해주세요.
 
-
-const numbers = [1, 2, 3, 4, 5]
-function solution(numbers){
-    const twice = numbers.map((value,index,arr)=> {
-        return value*2        
-        })
-    return twice;
+function solution(n, numlist) {
+    const answer = numlist.filter(value => {
+        if(value%n==0){
+            return true;
+        } else{
+            return false;
+        }
+    })
+    return answer;
 }
-console.log(solution([1, 2, 3, 4, 5]))
 
+console.log(solution(3, [4, 5, 6, 7, 8, 9, 10, 11, 12]))
